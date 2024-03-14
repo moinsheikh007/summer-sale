@@ -46,7 +46,7 @@
                                 <i class='bx bx-star' ></i>
                             </div>
                             <h3>K. Accessories</h3>
-                            <p>250.10TK</p>
+                            <p><span>250.10</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -58,8 +58,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>Home Coocker</h3>
-                            <p>250.10TK</p>
+                            <h3>Sports Cates</h3>
+                            <p><span>150.75</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -71,8 +71,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>K. Accessories</h3>
-                            <p>250.10TK</p>
+                            <h3>Chair</h3>
+                            <p><span>550.45</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -84,8 +84,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>K. Accessories</h3>
-                            <p>250.10TK</p>
+                            <h3>Chair the Kedara</h3>
+                            <p><span>100.24</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -97,8 +97,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>Home Coocker</h3>
-                            <p>250.10TK</p>
+                            <h3>Sports Jacket</h3>
+                            <p><span>750.10</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -111,7 +111,7 @@
                                 <i class='bx bx-star' ></i>
                             </div>
                             <h3>Home Coocker</h3>
-                            <p>250.10TK</p>
+                            <p><span>150.99</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -123,8 +123,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>Home Coocker</h3>
-                            <p>250.10TK</p>
+                            <h3>Cap</h3>
+                            <p><span>299.99</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -136,8 +136,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>Home Coocker</h3>
-                            <p>250.10TK</p>
+                            <h3>Rice Cooker</h3>
+                            <p><span>450.10</span>TK</p>
                         </div>
 
                         <div class="card">
@@ -149,8 +149,8 @@
                                 <i class='bx bxs-star-half' ></i>
                                 <i class='bx bx-star' ></i>
                             </div>
-                            <h3>Home Coocker</h3>
-                            <p>250.10TK</p>
+                            <h3>Handi</h3>
+                            <p><span>320.15</span>TK</p>
                         </div>
                     </div>
                 </div>
@@ -159,27 +159,27 @@
             <div class="calcultion">
                 <div class="haveCoupon">
                     <h3>Have Coupon?</h3>
-                    <input type="text" placeholder="Coupon Code...">
-                    <button>Apply</button>
+                    <input type="text" id="couponInput" placeholder="Coupon Code...">
+                    <button id="applyCoupon">Apply</button>
                 </div>
 
                 <div class="selectedProduct">
-                    <ol>
-                        <li>Home Cooker</li>
+                    <ol id="selectedProduct">
+                        <!-- <li>Home Cooker</li>
                         <li>Sport Cates</li>
                         <li>Accessories</li>
-                        <li>Sports Bat</li>
+                        <li>Sports Bat</li> -->
                     </ol>
                 </div>
 
                 <div class="priceing">
-                    <p>Total Price: <span>1200.00</span>TK</p>
-                    <p>Discount: <span>250.00</span>TK</p>
-                    <p>Total: <span>950.00</span>TK</p>
+                    <p>Total Price: <span id="totalPrice">00.00</span>TK</p>
+                    <p>Discount: <span id="discount">00.00</span>TK</p>
+                    <p>Total: <span id="netTotal">00.00</span>TK</p>
                 </div>
 
                 <div class="purchase">
-                    <button>Make Purchase</button>
+                    <button id="makePurchase">Make Purchase</button>
                 </div>
             </div>
             <div class="modal">
@@ -188,15 +188,10 @@
                 </div>
                 <h2>Congratulation</h2>
                 <p>You have Purchase the Product</p>
-                <button>Go Home</button>
+                <button id="closeModal">Go Home</button>
             </div>
         </section>
     </main>
-
-
-
-
-
 
 
     <!-- ===== Script File ===== -->

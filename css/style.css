@@ -86,8 +86,14 @@ section {
     background-color: #7bed9f;
     text-align: center;
     padding: 3rem 5rem;
-    /* z-index: -10; */
+    /* transition: visibility 2s linear; */
+    z-index: -10;
     visibility: hidden;
+}
+.modal.openModal {
+    visibility: visible;
+    z-index: 100;
+
 }
 .modal h2 {
     font-size: 1.8rem;
@@ -135,7 +141,7 @@ section {
     gap: 2rem;
     align-items: flex-start;
     width: 100%;
-    height: 500px;
+    height: auto;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
     /* justify-content: space-evenly; */
 }
